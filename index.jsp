@@ -3,6 +3,7 @@
 <%@ page import="java.io.File"%>
 <%@ page import="java.io.FilenameFilter"%>
 <%@ page import="java.net.URLDecoder"%>
+<%@ page import="java.util.Arrays"%>
 <%
     // 应用路径
     String contextPath = request.getContextPath();
@@ -37,6 +38,7 @@
             return false;
         }
     });
+    Arrays.sort(files);
 %>
 <!DOCTYPE html>
 <html>
